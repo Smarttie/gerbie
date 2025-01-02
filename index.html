@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para interactuar con el Agente Bella">
+    <title>Gerbie - Interactúa con nosotros</title>
+    <style>
+        /* Estilos básicos para centrar el contenido */
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f4f4f9, #eaeaea);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Encabezado */
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor del iframe */
+        .bot-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 600px; /* Ajusta la altura según lo necesario */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #0078d4;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido a Gerbie!</h1>
+    <div class="bot-container">
+        <iframe src='https://webchat.botframework.com/embed/Gebbie?s=2KCelVo8c2bSPdkModPkBTvpEWs5obWKG1B9zC35DXuGAeiLAxZtJQQJ99ALACHYHv6AArohAAABAZBS1sk4.AQErM9uwujMnJvWMF1kiy8yo7ywtjxK2ZPuh92TiayLjS1bhjQ0zJQQJ99ALACHYHv6AArohAAABAZBS19x2'  style='min-width: 400px; width: 100%; min-height: 500px;'>
+        </iframe>
+    </div>
+    <footer>
+        <p>Desarrollado por <a href="https://www.smarttie.ca/" target="_blank">Smarttie</a>.</p>
+    </footer>
+</body>
+</html>
