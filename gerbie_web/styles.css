@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  margin: 0;
+  padding: 0;
+  padding: 0 5%;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 80vh;
+}
+
+.brand-container {
+  margin-top: 50px;
+}
+
+.brand-container img {
+  width: 200px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #ffffff10;
+  border-radius: 15px 15px 0 0;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto;
+}
+
+header h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+header p {
+  font-size: 12px;
+  color: #ffffff69;
+  margin: 0;
+}
+
+header .agent-profile {
+  position: relative;
+  background-color: #ffffff10;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+header figure {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+header figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dots {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 1px;
+}
+
+#webchat {
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Contenedor del chatbot */
+#webchat > div > div {
+  padding: 1rem;
+}
+
+/* Estilos generales para las respuesta/mensajes */
+#webchat .webchat__bubble__content {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+
+/* Estilos para la burbuja de chat del usario */
+#webchat .webchat__bubble--from-user .webchat__bubble__content {
+  border-radius: 10px;
+}
+
+/* Estilos para la caja de mensaje */
+#webchat .webchat__send-box__main {
+  margin-top: 10px;
+  border: none;
+  border-radius: 50px;
+  padding: 4px;
+}
+
+/* Estilos para los botones de la caja de mensajes */
+#webchat .webchat__upload-button,
+#webchat .webchat__icon-button {
+  fill: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#webchat .webchat__icon-button__shade {
+  display: none;
+}
+
+#webchat .webchat__upload-button {
+  order: 1;
+}
+
+#webchat .webchat__send-button {
+  order: 2;
+}
+
+#webchat .webchat__upload-button:hover,
+#webchat .webchat__send-button:hover {
+  background: linear-gradient(90deg, #ea1f8e 0%, #eb205d 100%);
+}
+
+/* Estilos para scroll bar minimalistica */
+
+#webchat .webchat__basic-transcript__scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+#webchat .webchat__basic-transcript__scrollable::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+#webchat .webchat__imageAvatar__image img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
